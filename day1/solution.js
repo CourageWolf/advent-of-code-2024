@@ -1,3 +1,8 @@
+/**
+ * Day 1, pt 1 solution! 1341714
+ * To run file type "node solution.js" in the terminal
+ */
+
 // import csv
 const fs = require("fs");
 const readline = require("readline");
@@ -25,7 +30,6 @@ rl.on("close", () => {
   // sort arrays ascending order
   leftArray.sort();
   rightArray.sort();
-
   // create distance array [abs(input2_i - input1_i)]
   const distanceArray = leftArray.map((value, index) => {
     return Math.abs(value - rightArray[index]);
